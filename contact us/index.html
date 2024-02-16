@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="contact-box">
+    <h1>Contact Us <i class="fa-regular fa-envelope"></i></h1>
+        <p>Silakan menghubungi kami melalui contact form berikut ini.</p>
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <label class="form-label"></label>
+                    <input class="form-control" id="full_name" placeholder="name" required="" type="text" />
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="mb-3">
+                    <label class="form-label"></label>
+                    <input class="form-control" id="contact-user" placeholder="@username" type="email" />
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="mb-3">
+                    <label class="form-label"></label>
+                    <textarea class="form-control" placeholder="Text" id="message" rows="3"></textarea>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <button class="btn btn-primary" id="send-form" onclick="sendContact()">Send</button>
+            </div>
+            <div class="col-md-6">
+                <p id="status-message"></p>
+            </div>
+        </div>
+    </div>
+<p class="created">created by <a href="https://www.masmasit.com" id="mas2it-key">https://www.masmasit.com</a></p>
+<script src="script.js"></script>
+</body>
+</html>
